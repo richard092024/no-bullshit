@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         margin: 0;
@@ -17,6 +21,12 @@
         color: #000;
         font-size: 16px;
         line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "DM Sans", sans-serif;
       }
 
       .container {
@@ -35,6 +45,7 @@
       h1 {
         font-size: 2.2rem;
         font-weight: bold;
+        color: #005950;
       }
 
       h2 {
@@ -42,6 +53,7 @@
         font-weight: bold;
         padding-bottom: 0.3rem;
         border-bottom: 1px solid #eee;
+        color: #005950;
       }
 
       h3 {
@@ -68,28 +80,16 @@
         background-color: #ebebeb;
         padding: 1rem;
         margin-bottom: 2rem;
-        border-left: 5px solid black;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        border-radius: 4px;
-        transition: box-shadow 0.2s ease;
-      }
-
-      .price-block:hover {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: none;
+        border-radius: 0;
       }
 
       .section-block {
-        background-color: #f0f0f0;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        border-left: 3px solid #ddd;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        border-radius: 4px;
-        transition: box-shadow 0.2s ease;
-      }
-
-      .section-block:hover {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        padding: 2rem;
+        margin: 4rem 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
       }
 
       .footer {
@@ -111,19 +111,15 @@
       @media (max-width: 600px) {
         body {
           font-size: 15px;
-          padding: 1rem;
+          padding: 1rem 2rem;
         }
 
         .container {
-          padding: 1rem;
+          padding: 2rem;
         }
 
         h1 {
           font-size: 1.8rem;
-        }
-
-        h2 {
-          font-size: 1.25rem;
         }
 
         h3 {
@@ -138,34 +134,73 @@
         margin-bottom: 2rem;
       }
 
-      .partner-grid .price-block {
-        flex: 1 1 100%;
-        min-width: unset;
-        max-width: unset;
-        background-color: #ebebeb;
-        padding: 1rem;
-        border-left: 5px solid black;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      .section-label {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+        color: #666;
+        margin-bottom: 0.5rem;
+      }
+
+      button[type="submit"] {
+        background: #005950;
+        color: white;
+        padding: 0.75rem 1rem;
+        border: none;
         border-radius: 4px;
-        transition: box-shadow 0.2s ease;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div style="margin-top: -1rem; margin-bottom: 3rem">
-        <h1 style="margin: 0; font-size: 2.2rem">no-bullshit</h1>
-        <p
-          style="font-style: italic; font-size: 0.85rem; margin: -0.7rem 0 0 0"
+      <div
+        style="
+          background-color: #e0f2ef;
+          padding: 1rem;
+          border-radius: 6px;
+          display: inline-block;
+          margin-bottom: 4rem;
+        "
+      >
+        <h1
+          style="
+            margin: 0;
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-transform: lowercase;
+            color: #005950;
+          "
         >
-          Rådgivning uten dilldall.
+          no-bullshit
+        </h1>
+        <p
+          style="
+            margin: -0.7rem 0 0 0;
+            font-size: 0.8rem;
+            font-style: italic;
+            color: #005950;
+            opacity: 0.85;
+          "
+        >
+          Rådgivning uten dilldall
         </p>
       </div>
-      <div style="margin: 2rem 0 2rem 0">
-        <p style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.2rem">
-          Slutt å betale for ting du ikke trenger.
-        </p>
-        <p style="font-size: 1rem; margin-top: 0">
+      <div style="margin: 0 0 4rem 0">
+        <h2
+          style="
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0 0 0.5rem 0;
+            text-align: left;
+            color: #005950;
+          "
+        >
+          Slutt å betale<br />for ting du ikke trenger!
+        </h2>
+        <p style="font-size: 1.1rem; margin: 0 0 2rem 0">
           Vi hjelper deg å ta smartere valg – ærlig, uavhengig og uten
           provisjon.
         </p>
@@ -173,34 +208,140 @@
 
       <div class="section-block">
         <h2>Vi hjelper deg innen:</h2>
-        <ul>
-          <li>📢 Markedsføring – byråvalg, annonsekjøp, nettsider, SEO</li>
-          <li>💻 IT – drift, support, systemvalg, sikkerhet</li>
-          <li>🧾 Systemer – CRM, regnskap, prosjektverktøy, e-signering</li>
-        </ul>
+        <div
+          style="
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+          "
+        >
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>📢 Markedsføring</h3>
+            <p>Byråvalg, annonsering, nettsider, SEO.</p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>💻 IT</h3>
+            <p>Drift, support, systemvalg, sikkerhet.</p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>🧾 Systemer</h3>
+            <p>CRM, regnskap, prosjektverktøy, e-signering.</p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>🧠 Strategiske beslutninger</h3>
+            <p>
+              Vi hjelper deg å tenke klart før du binder deg til store
+              investeringer.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="section-block">
         <h2 id="partneravtaler">Slik gjør vi det:</h2>
-        <h3>🎯 Behovsanalyse</h3>
-        <p>
-          Vi snakker med deg, ikke over deg. Du forteller oss hvor skoen trykker
-          – vi finner ut hva som faktisk trengs.
-        </p>
-
-        <h3>📑 Tilbudsinnhenting</h3>
-        <p>
-          Vi kontakter relevante aktører og henter inn tilbud, så du slipper å
-          bli ringt ned.
-        </p>
-
-        <h3>✅ Nøytral anbefaling</h3>
-        <p>
-          Vi forteller deg hva vi ville valgt – uten å tjene penger på valget
-          ditt.
-        </p>
-
-        <p>
+        <div
+          style="
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+          "
+        >
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>🎯 Behovsanalyse</h3>
+            <p>
+              Vi snakker med deg, ikke over deg. Du forteller oss hvor skoen
+              trykker – vi finner ut hva som faktisk trengs.
+            </p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>📑 Tilbudsinnhenting</h3>
+            <p>
+              Vi kontakter relevante aktører og henter inn tilbud, så du slipper
+              å bli ringt ned.
+            </p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>✅ Nøytral anbefaling</h3>
+            <p>
+              Vi forteller deg hva vi ville valgt – uten å tjene penger på
+              valget ditt.
+            </p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>📆 Oppfølging</h3>
+            <p>
+              Vi sjekker inn jevnlig og følger opp for å sikre at ting faktisk
+              blir gjort.
+            </p>
+          </div>
+        </div>
+        <p style="margin-top: 1.5rem">
           Vi hjelper deg å ta smartere valg innen IT, markedsføring og digitale
           verktøy – uten selgere, provisjoner eller bullshit.
         </p>
@@ -208,19 +349,92 @@
 
       <div class="section-block">
         <h2>Hvorfor oss?</h2>
-        <ul>
-          <li>📞 Lei av selgere med «det beste tilbudet»?</li>
-          <li>🧠 Usikker på hvem du skal stole på?</li>
-          <li>💸 Betalt for systemer du ikke bruker?</li>
-        </ul>
-        <p>Vi er på din side. Ikke leverandørens.</p>
+        <div
+          style="
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+          "
+        >
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>📞 Lei av selgere?</h3>
+            <p>Vi tilbyr ingen “beste tilbud” – bare ærlige råd.</p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>🧠 Usikker på hvem du skal stole på?</h3>
+            <p>Vi er på din side – ikke leverandørens.</p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>💸 Betaler du for ting du ikke bruker?</h3>
+            <p>Vi hjelper deg å rydde opp og ta smartere valg.</p>
+          </div>
+          <div
+            style="
+              flex: 1 1 250px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+              padding: 1.5rem;
+            "
+          >
+            <h3>🙋‍♂️ Du har én å ringe</h3>
+            <p>
+              Én kontaktperson som kjenner deg – som svarer, og som sier det som
+              det er.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <h2 id="partneravtaler">Partneravtaler</h2>
+      <h2 id="partneravtaler">Din faste uavhengige rådgiver:</h2>
 
-      <div class="partner-grid">
-        <div class="price-block">
-          <h3>🟢 Lite – 2.900 kr/mnd</h3>
+      <div class="partner-grid" style="gap: 2rem; margin: 4rem 0">
+        <div
+          class="price-block"
+          style="
+            flex: 1;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            padding: 2rem;
+            text-align: left;
+          "
+        >
+          <h3>🟢 Lite</h3>
+          <p
+            style="
+              font-size: 1.5rem;
+              font-weight: bold;
+              margin: 0.5rem 0 1.5rem;
+            "
+          >
+            2.900 kr/mnd
+          </p>
           <ul>
             <li>✔ Inntil 3 rådgivningstimer per måned</li>
             <li>✔ Vi vurderer tilbud og avtaler du har fått</li>
@@ -229,8 +443,44 @@
           </ul>
         </div>
 
-        <div class="price-block">
-          <h3>🔵 Standard – 4.900 kr/mnd</h3>
+        <div
+          class="price-block"
+          style="
+            flex: 1;
+            background-color: #005950;
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            text-align: left;
+            position: relative;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              top: -12px;
+              left: 1rem;
+              background: #ffcb05;
+              color: #000;
+              font-weight: bold;
+              font-size: 0.75rem;
+              padding: 4px 8px;
+              border-radius: 4px;
+            "
+          >
+            Mest populær
+          </div>
+          <h3>🔵 Standard</h3>
+          <p
+            style="
+              font-size: 1.5rem;
+              font-weight: bold;
+              margin: 0.5rem 0 1.5rem;
+            "
+          >
+            4.900 kr/mnd
+          </p>
           <ul>
             <li>✔ Inntil 5 rådgivningstimer per måned</li>
             <li>✔ Tilbudsinnhenting fra flere leverandører</li>
@@ -240,8 +490,27 @@
           </ul>
         </div>
 
-        <div class="price-block">
-          <h3>🔴 Premium – 7.900 kr/mnd</h3>
+        <div
+          class="price-block"
+          style="
+            flex: 1;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            padding: 2rem;
+            text-align: left;
+          "
+        >
+          <h3>🔴 Premium</h3>
+          <p
+            style="
+              font-size: 1.5rem;
+              font-weight: bold;
+              margin: 0.5rem 0 1.5rem;
+            "
+          >
+            7.900 kr/mnd
+          </p>
           <ul>
             <li>✔ Inntil 8 rådgivningstimer per måned</li>
             <li>✔ Vi holder oversikt over dine systemer og avtaler</li>
@@ -263,16 +532,17 @@
       </ul>
 
       <div class="section-block" style="margin-top: 3rem" id="kontakt">
-        <h2>Kontakt oss</h2>
-        <p>Send oss en melding – vi svarer som folk.</p>
-        <form
-          style="
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            max-width: 500px;
-          "
-        >
+        <div style="max-width: 100%;">
+          <h2>Kontakt oss</h2>
+          <p>Send oss en melding – vi svarer som folk.</p>
+          <form
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              max-width: 500px;
+            "
+          >
           <input
             type="text"
             name="navn"
@@ -297,7 +567,7 @@
           <button
             type="submit"
             style="
-              background: black;
+              background: #005950;
               color: white;
               padding: 0.75rem 1rem;
               border: none;
@@ -307,15 +577,15 @@
           >
             Send melding
           </button>
-        </form>
-      </div>
-
-      <div class="footer">
-        <p>
-          no-provisjoner. no-salgstriks. no-bullshit.<br />
-          © no-bullshit.no
-        </p>
-      </div>
-    </div>
-  </body>
+          </form>
+        </div> <!-- avslutter kontaktseksjon -->
+ 
+        <div class="footer">
+          <p>
+            no-provisjoner. no-salgstriks. no-bullshit.<br />
+            © no-bullshit.no
+          </p>
+        </div>
+      </div> <!-- avslutter .container -->
+    </body>
 </html>
